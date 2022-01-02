@@ -1,0 +1,148 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #e0e8ff;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.bg {
+  background: url("../images/pattern-background-desktop.svg");
+  background-position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.order-block {
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  width: 400px;
+  border-radius: 15px;
+}
+
+.illustration-img {
+  border-radius: 15px 15px 0 0;
+  height: 180px;
+  width: 400px;
+}
+
+.card-title {
+  color: #212f52;
+  padding-top: 15px;
+  font-weight: 900;
+  margin: 15px 0;
+}
+
+.card-text {
+  color: #878ba0;
+  padding: 0 50px 0;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+.plan-block {
+  background-color: #f8f9fe;
+  display: flex;
+  justify-content: space-between; 
+  margin: 0 10% 25px;
+  height: 90px;
+  border-radius: 12px;
+}
+
+.plan {
+  width: 250px;
+  text-align: left;
+}
+
+.annual-plan {
+  color: #212f52;
+  margin: 25px 0 5px;
+  font-size: 1rem;
+  font-weight: 850;
+}
+
+.price {
+  color: #878ba0;
+  margin: 5px 0 25px;
+}
+
+.change-link {
+  padding: 35px 30px 0 10px;
+  color: #372ab3;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+
+.music-icon {
+  padding: 7%;
+}
+
+.payment {
+  background-color: #382ae1;
+  color: #fff;
+  box-shadow: 5px 8px 8px 10px #e5e3f7;
+  height: 45px;
+  border-radius: 8px;
+  width: 80%;
+  border: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.payment:hover {
+  background-color: #766cf1;
+}
+
+.cancel {
+  background-color: #fff;
+  color: #878ba0;
+  height: 45px;
+  border-radius: 8px;
+  width: 80%;
+  margin: 22px 0 15px;
+  border: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  color: #1a2944;
+}
+
+
+@media screen and (max-width:400px) {
+  .bg {
+    background-image: url("../images/pattern-background-mobile.svg");
+  }
+
+  .order-block {
+    width: 350px;
+    border-radius: 20px;
+  }
+
+  .illustration-img {
+    border-radius: 20px 20px 0 0;
+    height: 180px;
+    width: 350px;
+  }
+  
+  .plan-block {
+    margin: 0 7% 25px;
+  }
+  
+  .change-link {
+    padding-right: 20px;  }
+}
